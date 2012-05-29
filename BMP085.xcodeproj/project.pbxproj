@@ -1,0 +1,291 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		D74FA6B2149E58F900BF15AB /* Compile */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D74FA6C0149E58F900BF15AB /* Build configuration list for PBXAggregateTarget "Compile" */;
+			buildPhases = (
+				D74FA6B1149E58F900BF15AB /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Compile;
+			productName = Compile;
+		};
+		D74FA6B4149E58F900BF15AB /* Upload Duemilanove */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D74FA6C3149E58F900BF15AB /* Build configuration list for PBXAggregateTarget "Upload Duemilanove" */;
+			buildPhases = (
+				D74FA6B3149E58F900BF15AB /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Upload Duemilanove";
+			productName = "Upload Duemilanove";
+		};
+		D74FA6B6149E58F900BF15AB /* Upload Uno */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D74FA6C6149E58F900BF15AB /* Build configuration list for PBXAggregateTarget "Upload Uno" */;
+			buildPhases = (
+				D74FA6B5149E58F900BF15AB /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Upload Uno";
+			productName = "Upload Uno";
+		};
+		D74FA6B8149E58F900BF15AB /* Clean */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D74FA6C9149E58F900BF15AB /* Build configuration list for PBXAggregateTarget "Clean" */;
+			buildPhases = (
+				D74FA6B7149E58F900BF15AB /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Clean;
+			productName = Clean;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXFileReference section */
+		D7262EC51574654F003F6F95 /* BST-BMP085-DS000-05.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "BST-BMP085-DS000-05.pdf"; path = "../../../../Documents/Datasheets/BMP085/BST-BMP085-DS000-05.pdf"; sourceTree = "<group>"; };
+		D74FA6BA149E58F900BF15AB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		D74FA6BB149E58F900BF15AB /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		D74FA6AA149E58F900BF15AB = {
+			isa = PBXGroup;
+			children = (
+				D74FA6B9149E58F900BF15AB /* BMP085 */,
+			);
+			sourceTree = "<group>";
+		};
+		D74FA6B9149E58F900BF15AB /* BMP085 */ = {
+			isa = PBXGroup;
+			children = (
+				D74FA6BA149E58F900BF15AB /* main.cpp */,
+				D74FA6BB149E58F900BF15AB /* Makefile */,
+				D74FA6BC149E58F900BF15AB /* Documentation */,
+			);
+			path = BMP085;
+			sourceTree = "<group>";
+		};
+		D74FA6BC149E58F900BF15AB /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				D7262EC51574654F003F6F95 /* BST-BMP085-DS000-05.pdf */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		D74FA6AC149E58F900BF15AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Georgia Institute Technology";
+			};
+			buildConfigurationList = D74FA6AF149E58F900BF15AB /* Build configuration list for PBXProject "BMP085" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D74FA6AA149E58F900BF15AB;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D74FA6B2149E58F900BF15AB /* Compile */,
+				D74FA6B4149E58F900BF15AB /* Upload Duemilanove */,
+				D74FA6B6149E58F900BF15AB /* Upload Uno */,
+				D74FA6B8149E58F900BF15AB /* Clean */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D74FA6B1149E58F900BF15AB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo '===== BUILDING FILE FOR TARGET UPLOAD ====='\ncd $PROJECT_DIR/$PROJECT_NAME\nmake compile\nexit 0";
+		};
+		D74FA6B3149E58F900BF15AB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo '===== BUILDING FILE FOR TARGET UPLOAD ====='\ncd $PROJECT_DIR/$PROJECT_NAME\nmake BOARD=\"atmega328\" upload\nexit 0";
+		};
+		D74FA6B5149E58F900BF15AB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo '===== BUILDING FILE FOR TARGET UPLOAD ====='\ncd $PROJECT_DIR/$PROJECT_NAME\nmake BOARD=\"uno\" upload\nexit 0";
+		};
+		D74FA6B7149E58F900BF15AB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo '===== BUILDING FILE FOR TARGET UPLOAD ====='\ncd $PROJECT_DIR/$PROJECT_NAME\nmake clean\nexit 0";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D74FA6BE149E58F900BF15AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		D74FA6BF149E58F900BF15AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		D74FA6C1149E58F900BF15AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D74FA6C2149E58F900BF15AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D74FA6C4149E58F900BF15AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D74FA6C5149E58F900BF15AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D74FA6C7149E58F900BF15AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D74FA6C8149E58F900BF15AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D74FA6CA149E58F900BF15AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D74FA6CB149E58F900BF15AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D74FA6AF149E58F900BF15AB /* Build configuration list for PBXProject "BMP085" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D74FA6BE149E58F900BF15AB /* Debug */,
+				D74FA6BF149E58F900BF15AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D74FA6C0149E58F900BF15AB /* Build configuration list for PBXAggregateTarget "Compile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D74FA6C1149E58F900BF15AB /* Debug */,
+				D74FA6C2149E58F900BF15AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D74FA6C3149E58F900BF15AB /* Build configuration list for PBXAggregateTarget "Upload Duemilanove" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D74FA6C4149E58F900BF15AB /* Debug */,
+				D74FA6C5149E58F900BF15AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D74FA6C6149E58F900BF15AB /* Build configuration list for PBXAggregateTarget "Upload Uno" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D74FA6C7149E58F900BF15AB /* Debug */,
+				D74FA6C8149E58F900BF15AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D74FA6C9149E58F900BF15AB /* Build configuration list for PBXAggregateTarget "Clean" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D74FA6CA149E58F900BF15AB /* Debug */,
+				D74FA6CB149E58F900BF15AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D74FA6AC149E58F900BF15AB /* Project object */;
+}
