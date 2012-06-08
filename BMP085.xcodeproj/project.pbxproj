@@ -54,9 +54,11 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXFileReference section */
-		D7262EC51574654F003F6F95 /* BST-BMP085-DS000-05.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "BST-BMP085-DS000-05.pdf"; path = "../../../../Documents/Datasheets/BMP085/BST-BMP085-DS000-05.pdf"; sourceTree = "<group>"; };
+		D7262EC6157466CC003F6F95 /* BMP085.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = BMP085.cpp; path = ../../../libraries/BMP085/BMP085.cpp; sourceTree = "<group>"; };
+		D7262EC7157466CC003F6F95 /* BMP085.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BMP085.h; path = ../../../libraries/BMP085/BMP085.h; sourceTree = "<group>"; };
 		D74FA6BA149E58F900BF15AB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		D74FA6BB149E58F900BF15AB /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		D7FE197515819C9700C447FA /* BST-BMP085.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "BST-BMP085.pdf"; path = "Documentation/BST-BMP085.pdf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -71,6 +73,8 @@
 			isa = PBXGroup;
 			children = (
 				D74FA6BA149E58F900BF15AB /* main.cpp */,
+				D7262EC7157466CC003F6F95 /* BMP085.h */,
+				D7262EC6157466CC003F6F95 /* BMP085.cpp */,
 				D74FA6BB149E58F900BF15AB /* Makefile */,
 				D74FA6BC149E58F900BF15AB /* Documentation */,
 			);
@@ -80,7 +84,7 @@
 		D74FA6BC149E58F900BF15AB /* Documentation */ = {
 			isa = PBXGroup;
 			children = (
-				D7262EC51574654F003F6F95 /* BST-BMP085-DS000-05.pdf */,
+				D7FE197515819C9700C447FA /* BST-BMP085.pdf */,
 			);
 			name = Documentation;
 			sourceTree = "<group>";

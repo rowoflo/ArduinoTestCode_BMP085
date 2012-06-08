@@ -1,5 +1,5 @@
 # Arduino Makefile
-# by Rowland O'Flaherty <www.rowlandoflaherty.com>
+# by Rowland O'Flaherty <rowlandoflaherty.com>
 #
 # This makefile allows you to build .cpp files for arduino from the command line
 # on OS X without using the Arduino environment (or Java).  Also, you can
@@ -25,7 +25,7 @@
 #		Save and close this file. Really stupid that the Arduino people didn't
 #		include the "WProgram.h" file for backwards compatibility.
 #
-#  3.	Copy this "Makefile" into the folder with your main .cpp file.
+#  3.	Copy this "Makefile" into the folder with your main.cpp file.
 #     
 #  2.	Modify the enviroment variables below for your system.
 #
@@ -87,7 +87,7 @@ BOARD = uno
 
 # Directory continaing user added libraries ------------------------------------
 #-------------------------------------------------------------------------------
-ARDUINO_DIR = /Users/rowland/Engineering/Programming/Arduino
+ARDUINO_DIR = ~/Dropbox/Arduino
 
 
 # Directory continaing Arduino.app ---------------------------------------------
@@ -250,7 +250,7 @@ $(sourceName).hex : $(sourceName).elf
 	
 $(sourceName).elf : $(sourceName).o $(userSourceLibDepenO) $(arduinoStaticLibDir)/arduino.a
 	$(LD) $(LDFLAGS) -o $@ $(sourceName).o  $(userSourceLibDepenO) \
-	$(AVRLib)/libm.a $(arduinoStaticLibDir)/arduino.a 
+	$(arduinoStaticLibDir)/arduino.a $(AVRLib)/libm.a
 	
 $(sourceName).o : $(sourceName).cpp $(userSourceLibDepenH)
 	$(CPP) -c $(arduinoIncs) $(userIncs) $(CPPFLAGS) $< -o $@
@@ -340,4 +340,4 @@ $(arduinoLibDir)/$(arduinoObjDirName)/%.o : %.cpp
 
 # Debug target ------------------------------------------------------------------
 debug :
-	@echo $(userLibIncs)
+	@echo $(mcu)
