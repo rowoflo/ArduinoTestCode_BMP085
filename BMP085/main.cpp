@@ -10,7 +10,7 @@
     SDA to pin 4
     SCL on pin 5
  
- Initially created by Rowland O'Flaherty on 12/18/11.
+ Initially created by Rowland O'Flaherty (rowlandoflaherty.com) on 12/18/11.
  
  Version 1.0
  -------------------------------------------------------------------------------
