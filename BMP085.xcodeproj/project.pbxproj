@@ -141,7 +141,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo '===== BUILDING FILE FOR TARGET UPLOAD ====='\ncd $PROJECT_DIR/$PROJECT_NAME\nmake compile\nexit 0";
+			shellScript = "echo '===== BUILDING FILE FOR TARGET UPLOAD ====='\ncd $PROJECT_DIR/$PROJECT_NAME\nmake compile";
 		};
 		D74FA6B3149E58F900BF15AB /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -154,7 +154,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo '===== BUILDING FILE FOR TARGET UPLOAD ====='\ncd $PROJECT_DIR/$PROJECT_NAME\nmake BOARD=\"atmega328\" upload\nexit 0";
+			shellScript = "echo '===== BUILDING FILE FOR TARGET UPLOAD ====='\ncd $PROJECT_DIR/$PROJECT_NAME\nmake BOARD=\"atmega328\" upload";
 		};
 		D74FA6B5149E58F900BF15AB /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -167,7 +167,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo '===== BUILDING FILE FOR TARGET UPLOAD ====='\ncd $PROJECT_DIR/$PROJECT_NAME\nmake BOARD=\"uno\" upload\nexit 0";
+			shellScript = "echo '===== BUILDING FILE FOR TARGET UPLOAD ====='\ncd $PROJECT_DIR/$PROJECT_NAME\nmake BOARD=\"uno\" upload";
 		};
 		D74FA6B7149E58F900BF15AB /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -180,7 +180,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo '===== BUILDING FILE FOR TARGET UPLOAD ====='\ncd $PROJECT_DIR/$PROJECT_NAME\nmake clean\nexit 0";
+			shellScript = "echo '===== BUILDING FILE FOR TARGET UPLOAD ====='\ncd $PROJECT_DIR/$PROJECT_NAME\nmake clean";
 		};
 		D7E5B5751620C01500746A32 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -194,7 +194,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo '===== BUILDING FILE FOR TARGET UPLOAD ====='\ncd $PROJECT_DIR/$PROJECT_NAME\nmake BOARD=\"nano328\" upload\nexit 0";
+			shellScript = "echo '===== BUILDING FILE FOR TARGET UPLOAD ====='\ncd $PROJECT_DIR/$PROJECT_NAME\nmake BOARD=\"nano328\" upload";
 		};
 /* End PBXShellScriptBuildPhase section */
 
